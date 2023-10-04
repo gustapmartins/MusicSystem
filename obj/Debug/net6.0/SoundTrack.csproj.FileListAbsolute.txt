@@ -1,0 +1,14 @@
+C:\Users\gusta\OneDrive\Documentos\Github\SoundTrack\bin\Debug\net6.0\SoundTrack.exe
+C:\Users\gusta\OneDrive\Documentos\Github\SoundTrack\bin\Debug\net6.0\SoundTrack.deps.json
+C:\Users\gusta\OneDrive\Documentos\Github\SoundTrack\bin\Debug\net6.0\SoundTrack.runtimeconfig.json
+C:\Users\gusta\OneDrive\Documentos\Github\SoundTrack\bin\Debug\net6.0\SoundTrack.dll
+C:\Users\gusta\OneDrive\Documentos\Github\SoundTrack\bin\Debug\net6.0\SoundTrack.pdb
+C:\Users\gusta\OneDrive\Documentos\Github\SoundTrack\obj\Debug\net6.0\SoundTrack.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gusta\OneDrive\Documentos\Github\SoundTrack\obj\Debug\net6.0\SoundTrack.AssemblyInfoInputs.cache
+C:\Users\gusta\OneDrive\Documentos\Github\SoundTrack\obj\Debug\net6.0\SoundTrack.AssemblyInfo.cs
+C:\Users\gusta\OneDrive\Documentos\Github\SoundTrack\obj\Debug\net6.0\SoundTrack.csproj.CoreCompileInputs.cache
+C:\Users\gusta\OneDrive\Documentos\Github\SoundTrack\obj\Debug\net6.0\SoundTrack.dll
+C:\Users\gusta\OneDrive\Documentos\Github\SoundTrack\obj\Debug\net6.0\refint\SoundTrack.dll
+C:\Users\gusta\OneDrive\Documentos\Github\SoundTrack\obj\Debug\net6.0\SoundTrack.pdb
+C:\Users\gusta\OneDrive\Documentos\Github\SoundTrack\obj\Debug\net6.0\SoundTrack.genruntimeconfig.cache
+C:\Users\gusta\OneDrive\Documentos\Github\SoundTrack\obj\Debug\net6.0\ref\SoundTrack.dll
