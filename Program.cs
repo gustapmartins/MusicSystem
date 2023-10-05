@@ -13,12 +13,10 @@ class Program
         person.AddMusic(musica);
         bandasRegistradas.Add(person);
 
-
-        Episodio episodio = new(1, "Teste episodio", 45);
-        episodio.AddConvidados("Maria");
-
         Podcast podcast = new("reino animal", "Gustavo");
         podcastList.Add(podcast);
+
+        Episodio episodio = new(1, "Teste episodio", 45);
         podcast.AddEpisodio(episodio);
 
         Dictionary<int, Menu<Banda>> opcoes = new();
@@ -35,6 +33,7 @@ class Program
         opcoesPodcast.Add(7, new MenuRegistrarPodcast());
         opcoesPodcast.Add(8, new MenuMostrarPodcast());
         opcoesPodcast.Add(9, new MenuProcurarUmPodcast());
+        opcoesPodcast.Add(10, new MenuRegistrarEpisodio());
 
         void ExibirLogo()
         {
@@ -53,6 +52,7 @@ class Program
             Console.WriteLine("Digite 7 para registrar um podcast");
             Console.WriteLine("Digite 8 para mostrar todos os podcast");
             Console.WriteLine("Digite 9 para procurar por um podcast");
+            Console.WriteLine("Digite 10 para adicionar um episodio ao podcast");
             Console.WriteLine("Digite -1 para sair do programa");
         }
 

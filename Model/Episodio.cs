@@ -2,8 +2,6 @@
 
 public class Episodio
 {
-    private readonly List<string> Convidados = new();
-
     public Episodio(int ordem, string titulo, double duracao)
     {
         Ordem = ordem;
@@ -17,10 +15,5 @@ public class Episodio
 
     public double Duracao { get; set;}
 
-    public string Resumo => $"Ordem: {Ordem} - Titulo: {Titulo} ({Duracao} min) - {string.Join(", ", Convidados)}";
-
-    public void AddConvidados(string convidados)
-    {
-        Convidados.Add(convidados);
-    }
+    public string Resumo => $"Ordem: {Ordem} - Titulo: {Titulo} ({Duracao} min)";
 }
