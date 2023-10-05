@@ -1,4 +1,5 @@
 ﻿using SoundTrack.Model;
+using SoundTrack.Utils;
 
 namespace SoundTrack.Menu;
 
@@ -17,7 +18,16 @@ public class MenuProcurePorUmaBanda: Menu<Banda>
             if(nomeDaBanda.Equals(banda.Nome))
             {
                 banda.ExibirDetalhes();
+                Console.WriteLine($"\n{Constants.menuPrincipal}");
+                Console.ReadKey();
+                Console.Clear();
+                return;
             }
         }
+
+        Console.WriteLine($"O Podcast {nomeDaBanda} não existe");
+        Console.WriteLine($"\n{Constants.menuPrincipal}");
+        Console.ReadKey();
+        Console.Clear();
     }
 }

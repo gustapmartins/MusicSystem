@@ -28,12 +28,13 @@ class Program
         opcoes.Add(3, new MenuAvaliarUmaBanda());
         opcoes.Add(4, new MenuExibirMedia());
         opcoes.Add(5, new MenuProcurePorUmaBanda());
-        opcoes.Add(6, new MenuRegistrarUmMusica());
+        opcoes.Add(6, new MenuRegistrarMusica());
 
         Dictionary<int, Menu<Podcast>> opcoesPodcast = new();
 
-        opcoesPodcast.Add(8, new MenuRegistrarPodcast());
-        opcoesPodcast.Add(9, new MenuMostrarPodcast());
+        opcoesPodcast.Add(7, new MenuRegistrarPodcast());
+        opcoesPodcast.Add(8, new MenuMostrarPodcast());
+        opcoesPodcast.Add(9, new MenuProcurarUmPodcast());
 
         void ExibirLogo()
         {
@@ -49,9 +50,9 @@ class Program
             Console.WriteLine("Digite 4 para exibir a media de uma banda");
             Console.WriteLine("Digite 5 para procurar por uma banda");
             Console.WriteLine("Digite 6 para registrar uma musica para a banda");
-            Console.WriteLine("Digite 7 para mostrar todos os podcast");
-            Console.WriteLine("Digite 8 para registrar um podcast");
-            Console.WriteLine("Digite 9 para adicionar um episodio ao podcast");
+            Console.WriteLine("Digite 7 para registrar um podcast");
+            Console.WriteLine("Digite 8 para mostrar todos os podcast");
+            Console.WriteLine("Digite 9 para procurar por um podcast");
             Console.WriteLine("Digite -1 para sair do programa");
         }
 
@@ -59,7 +60,7 @@ class Program
         {
             MenuOpcao();
 
-            Console.WriteLine("\n Digite a sua opção: ");
+            Console.WriteLine("\nDigite a sua opção: ");
             int opcaoEscolhida = int.Parse(Console.ReadLine()!);
 
             if(opcoes.ContainsKey(opcaoEscolhida)) 

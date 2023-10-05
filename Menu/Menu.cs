@@ -15,5 +15,6 @@ public class Menu<T> where T : class
     public virtual void Executar(List<T> bandasRegistradas)
     {
         Console.Clear();
+       
     }
 }

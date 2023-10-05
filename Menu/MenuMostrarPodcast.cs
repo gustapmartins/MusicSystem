@@ -1,4 +1,5 @@
 ﻿using SoundTrack.Model;
+using SoundTrack.Utils;
 
 namespace SoundTrack.Menu;
 
@@ -6,6 +7,7 @@ public class MenuMostrarPodcast: Menu<Podcast>
 {
     public override void Executar(List<Podcast> ListaPodcast)
     {
+        string menuPrincipal = "Digite o nome da banda que deseja exibir a média: ";
         base.Executar(ListaPodcast);
         ExibirTitutoOpcao("Exibindo todas os podcasts registrados na nossa aplicação");
 
@@ -14,7 +16,7 @@ public class MenuMostrarPodcast: Menu<Podcast>
             ListaPodcast[i].ExibirDetalhes();
         }
 
-        Console.WriteLine("\n Digite uma tecla para voltar ao menu principal");
+        Console.WriteLine($"\n{Constants.menuPrincipal}");
         Console.ReadKey();
         Console.Clear();
     }

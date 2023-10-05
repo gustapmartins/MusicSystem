@@ -1,8 +1,9 @@
 ﻿using SoundTrack.Model;
+using SoundTrack.Utils;
 
 namespace SoundTrack.Menu;
 
-public class MenuRegistrarUmMusica: Menu<Banda>
+public class MenuRegistrarMusica: Menu<Banda>
 {
     public override void Executar(List<Banda> bandasList)
     {
@@ -34,7 +35,8 @@ public class MenuRegistrarUmMusica: Menu<Banda>
         }
 
         Console.WriteLine($"A banda {nomeDaBanda} foi registrado com sucesso !");
-        Thread.Sleep(1000);
+        Console.WriteLine($"\n{Constants.menuPrincipal}");
+        Console.ReadKey();
         Console.Clear();
     }
 }

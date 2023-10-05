@@ -1,4 +1,5 @@
-﻿using SoundTrack.Model;
+﻿using SoundTrack.Utils;
+using SoundTrack.Model;
 
 namespace SoundTrack.Menu;
 
@@ -9,7 +10,7 @@ public class MenuExibirMedia: Menu<Banda>
         base.Executar(bandasRegistradas);
         ExibirTitutoOpcao("Exibir média da banda");
 
-        Console.Write("Digite o nome da banda que deseja exibir a média: ");
+        Console.Write(Constants.menuPrincipal);
         string nomeDaBanda = Console.ReadLine()!;
 
         for (int i = 0; i < bandasRegistradas.Count; i++)
@@ -20,14 +21,15 @@ public class MenuExibirMedia: Menu<Banda>
             {
                 double media = banda.CalcularMedia(banda.Nota);
                 Console.WriteLine($"\na média da banda {nomeDaBanda} é {media}");
-                Console.WriteLine("Digite uma tecla para voltar ao menu principal");
+                Console.WriteLine("\nDigite uma tecla para voltar ao menu principal: ");
                 Console.ReadKey();
                 Console.Clear();
+                return;
             }
         }
 
-        Console.WriteLine($"\n A banda {nomeDaBanda} não foi encontrada");
-        Console.WriteLine("Digite uma tecla para voltar ao menu principal");
+        Console.WriteLine($"\nA banda {nomeDaBanda} não foi encontrada");
+        Console.WriteLine(Constants.menuPrincipal);
         Console.ReadKey();
         Console.Clear();
     }

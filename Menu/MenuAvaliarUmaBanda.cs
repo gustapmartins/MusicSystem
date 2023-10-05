@@ -1,5 +1,5 @@
-﻿
-using SoundTrack.Model;
+﻿using SoundTrack.Model;
+using SoundTrack.Utils;
 
 namespace SoundTrack.Menu;
 
@@ -8,10 +8,11 @@ public class MenuAvaliarUmaBanda : Menu<Banda>
 {
     public override void Executar(List<Banda> bandasRegistradas)
     {
-        base.Executar(bandasRegistradas);
+        
 
+        base.Executar(bandasRegistradas);
         ExibirTitutoOpcao("Avaliar banda");
-        Console.WriteLine("Digite o nome da banda que deseja avaliar");
+        Console.Write(Constants.menuPrincipal);
         string nomeDaBanda = Console.ReadLine()!;
 
         for (int i = 0; i < bandasRegistradas.Count; i++)
@@ -20,17 +21,18 @@ public class MenuAvaliarUmaBanda : Menu<Banda>
 
             if (nomeDaBanda.Equals(banda.Nome))
             {
-                Console.WriteLine($"Qual é a nota que a banda {nomeDaBanda} merece: ");
+                Console.Write($"Qual é a nota que a banda {nomeDaBanda} merece: ");
                 int nota = int.Parse(Console.ReadLine()!);
                 banda.AddNota(nota);
-                Console.WriteLine($"A {nota} foi registrada com sucesso para a banda {nomeDaBanda}: ");
+                Console.WriteLine($"A nota {nota} foi registrada com sucesso para a banda {nomeDaBanda}: ");
                 Thread.Sleep(2000);
                 Console.Clear();
+                return;
             }
         }
 
-        Console.WriteLine($"\n A banda {nomeDaBanda} não foi encontrada!");
-        Console.WriteLine("Digite uma tecla para voltar ao menu principal");
+        Console.WriteLine($"\nA banda {nomeDaBanda} não foi encontrada!");
+        Console.WriteLine($"\n{Constants.menuPrincipal}");
         Console.ReadKey();
         Console.Clear();
     }
