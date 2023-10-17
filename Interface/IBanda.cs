@@ -6,5 +6,5 @@ public interface IBanda
 
     void AddNota(int nota);
 
-    double CalcularMedia(List<int> nota);
+    int CalcularMedia(List<int> nota);
 }

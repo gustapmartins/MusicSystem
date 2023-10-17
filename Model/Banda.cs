@@ -4,27 +4,33 @@ namespace SoundTrack.Model;
 
 public class Banda: IBanda
 {
-    private readonly List<Musica> musicaList = new();
+    public Banda() { }
 
     public Banda(string nome, List<int> nota)
     {
         Nome = nome;
         Nota = nota;
+        musicaList = new List<Musica>();
     }
 
     public string Nome { get; set; }
-    public List<int> Nota { get; set; }
+    public List<int> Nota = new();
 
-    public double CalcularMedia(List<int> nota)
+    public List<Musica> musicaList = new();
+
+    public int CalcularMedia(List<int> nota)
     {
-        int soma = 0;
+        double soma = 0;
 
         for (int i = 0; i < nota.Count; i++)
         {
             soma += nota[i];
         }
 
-        return soma;
+        var media = soma / nota.Count;
+        //Convert.ToInt32(media)
+
+        return (int)media;
     }
 
     public void AddMusic(Musica musica)

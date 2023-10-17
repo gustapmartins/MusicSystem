@@ -15,7 +15,7 @@ public class MenuRegistrarPodcast: Menu<Podcast>
         Console.WriteLine("Digite o host do seu Podcast");
         string nomeDoHost = Console.ReadLine()!;
 
-        Podcast podcast = new(nomeDoPodcast, nomeDoHost);
+        Podcast podcast = new(nomeDoHost, nomeDoPodcast);
         podcastList.Add(podcast);
 
         Console.WriteLine($"O Podcast {nomeDoPodcast} foi registrado com sucesso !");

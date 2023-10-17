@@ -2,6 +2,11 @@
 
 public class Musica
 {
+    public Musica()
+    {
+
+    }
+
     public Musica(string nome, int duracao)
     {
         Nome = nome;

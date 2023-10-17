@@ -8,7 +8,7 @@ class Program
         List<Banda> bandasRegistradas = new List<Banda>();
         List<Podcast> podcastList = new List<Podcast>();
 
-        Banda person = new("Linkin Park", new List<int> { 12, 15, 17, 20, 22 });
+        Banda person = new("Linkin Park", new List<int> { 10, 20, 10 });
         Musica musica = new("forever alone", 45);
         person.AddMusic(musica);
         bandasRegistradas.Add(person);

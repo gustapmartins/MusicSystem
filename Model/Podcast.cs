@@ -4,7 +4,7 @@ namespace SoundTrack.Model;
 
 public class Podcast: IPodcast
 {
-    private readonly List<Episodio> listaEpisodios = new();
+    public Podcast() { }
 
     public Podcast(string host, string nome) 
     { 
@@ -16,12 +16,14 @@ public class Podcast: IPodcast
 
     public string Nome { get; set; }
 
+    public readonly List<Episodio> listaEpisodios = new();
+
     public int TotalDeEpisodios
     {
         get
         {
             int totalDeEpisodios = 0;
-            if(totalDeEpisodios != 0)
+            if(listaEpisodios.Count != 0)
             {
                 totalDeEpisodios += listaEpisodios.Count;
             }
@@ -37,7 +39,7 @@ public class Podcast: IPodcast
 
     public void ExibirDetalhes()
     {
-        Console.WriteLine($"Nome: {Nome}, Host: {Host}");
+        Console.WriteLine($"Nome: {Nome}, Host: {Host}, Total de episodios: {TotalDeEpisodios}");
 
         for (int i = 0; i < listaEpisodios.Count; i++)
         {

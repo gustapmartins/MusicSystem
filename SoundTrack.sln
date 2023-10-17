@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34024.191
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoundTrack", "SoundTrack.csproj", "{B88C270B-2F93-4F77-864E-A898AA48B153}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SoundTrack", "SoundTrack.csproj", "{B88C270B-2F93-4F77-864E-A898AA48B153}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "..\Test\Test.csproj", "{4020892B-6F3C-489C-A0B5-1023591EF3AD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{B88C270B-2F93-4F77-864E-A898AA48B153}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B88C270B-2F93-4F77-864E-A898AA48B153}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B88C270B-2F93-4F77-864E-A898AA48B153}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4020892B-6F3C-489C-A0B5-1023591EF3AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4020892B-6F3C-489C-A0B5-1023591EF3AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4020892B-6F3C-489C-A0B5-1023591EF3AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4020892B-6F3C-489C-A0B5-1023591EF3AD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

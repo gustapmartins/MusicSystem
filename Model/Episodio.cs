@@ -2,6 +2,8 @@
 
 public class Episodio
 {
+    public Episodio() { }
+    
     public Episodio(int ordem, string titulo, double duracao)
     {
         Ordem = ordem;
